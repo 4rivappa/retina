@@ -1,6 +1,6 @@
 {
   "name": "retina",
-  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "image": "mcr.microsoft.com/oss/go/microsoft/golang:1.22.3-1-cbl-mariner2.0",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
@@ -9,7 +9,7 @@
     "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
     "ghcr.io/devcontainers-contrib/features/kind:1": {}
   },
-  "postCreateCommand": "bash .devcontainer/installMoreTools.sh && kind create cluster",
+  "postCreateCommand": "echo 'hello world'",
   "customizations": {
     "vscode": {
       "extensions": [
