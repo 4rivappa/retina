@@ -23,7 +23,8 @@ func TestE2ERetina(t *testing.T) {
 	curuser, err := user.Current()
 	require.NoError(t, err)
 
-	clusterName := curuser.Username + common.NetObsRGtag + strconv.FormatInt(time.Now().Unix(), 10)
+	// clusterName := curuser.Username + common.NetObsRGtag + strconv.FormatInt(time.Now().Unix(), 10)
+	clusterName := "1-12686dd2-playground-sandbox"
 
 	subID := os.Getenv("AZURE_SUBSCRIPTION_ID")
 	require.NotEmpty(t, subID)
