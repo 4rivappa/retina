@@ -14,11 +14,11 @@ import (
 func CreateTestInfra(subID, clusterName, location, kubeConfigFilePath string) *types.Job {
 	job := types.NewJob("Create e2e test infrastructure")
 
-	job.AddStep(&azure.CreateResourceGroup{
-		SubscriptionID:    subID,
-		ResourceGroupName: clusterName,
-		Location:          location,
-	}, nil)
+	// job.AddStep(&azure.CreateResourceGroup{
+	// 	SubscriptionID:    subID,
+	// 	ResourceGroupName: clusterName,
+	// 	Location:          location,
+	// }, nil)
 
 	job.AddStep(&azure.CreateVNet{
 		VnetName:         "testvnet",
